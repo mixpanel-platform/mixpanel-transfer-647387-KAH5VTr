@@ -676,7 +676,9 @@
     </script>
     
     <script type="text/cq" id="cq">
-      var EVENT_LIST = params.event_list;
+    var EVENT_LIST = params.event_list || ['Best-match answer saved', 'Registration Completed'];
+var PATH_LENGTH =  params.path_length || 3;
+      //var EVENT_LIST = params.event_list;
       var PATH_LENGTH =  params.path_length || 3;
       
       function main() {
